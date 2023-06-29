@@ -30,9 +30,19 @@ Write 'cd env' to enter the env. Now in env folder install the files.
 1) config the database in "config/settings.py"
 2) in terminal give command "python main.py makemigrations"
 3) "python main.py migrate"
+4) "python main.py collectstatic"
 4) Create superuser by "python main.py createsuperuser"
 5)"python main.py runserver"
 ```
+
+## IPFS MANAGEMENT
+
+```sh
+1) Go to defence/views.py
+2) Create a account in https://www.infura.io/
+3) Now Enter the App Secrets And App Keys into "api_secrets" and in "api_keys" in views.py
+```
+
 ## Usage
 ```sh
 1) Enter into http://localhost:8080/admin
