@@ -33,4 +33,9 @@ Write 'cd env' to enter the env. Now in env folder install the files.
 4) Create superuser by "python main.py createsuperuser"
 5)"python main.py runserver"
 ```
-
+## Usage
+```sh
+1) Enter into http://localhost:8080/admin
+2) Login with Administrator account.
+3) Add new User wuth Role militarypersonnal and controlcenter
+```
