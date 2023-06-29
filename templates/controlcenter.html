@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Goverment Portal{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{% static 'controlcenter_css.css' %}">
+{% endblock %}
+
+{% block logo %}<a class="navbar-brand" style="color: #49688e;">{{request.user.first_name}} {{request.user.last_name}}</a>{% endblock %}
+
+{% block logout_btn %}<a class="nav-link" href="{% url 'user_logout' %}" style="color: #49688e; text-decoration: none;">Logout</a>{% endblock %}
+
+{% block content %}
+
+<h4>Received Important Papers</h4>
+<hr>
+
+{% for militarychief in queryset %}
+<div class="card bg-light text-dark flip" id="{{prequest.id}}">
+	<div class="card-body">
+	  	<div class="details" id="details">
+	  		File Code: <span style="color: #49688e;">{{militarychief.file_code}}</span><br>
+	  		Department: <span style="color: #49688e;">{{militarychief.department}}</span><br>
+	  		Country: <span style="color: #49688e;">{{militarychief.country}}</span><br>
+	  		Base: <span style="color: #49688e;">{{militarychief.base}}</span><br>
+	  		Mission: <span style="color: #49688e;">{{militarychief.mission}}</span><br>
+	  		File: <span><a href="{{militarychief.paper.url}}" style="color: #49688e;" target="_blank">Download Paper</a></span><br>
+  		</div>
+	</div>
+</div><br>
+{% endfor %}
+
+{% endblock %}
