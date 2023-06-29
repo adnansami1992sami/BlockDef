@@ -39,13 +39,13 @@ Write 'cd env' to enter the env. Now in env folder install the files.
 
 ```sh
 1) Go to defence/views.py
-2) Create a account in https://www.infura.io/
+2) Create a account in "https://www.infura.io/"
 3) Now Enter the App Secrets And App Keys into "api_secrets" and in "api_keys" in views.py
 ```
 
 ## Usage
 ```sh
-1) Enter into http://localhost:8080/admin
+1) Enter into "http://localhost:8080/admin"
 2) Login with Administrator account.
 3) Add new User wuth Role militarypersonnal and controlcenter
 ```
