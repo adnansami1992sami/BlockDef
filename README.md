@@ -10,22 +10,22 @@ A Blockchain Based Web-Client For Secured Defence File Management Concept
 [![LICENSE](https://img.shields.io/github/license/AsmSafone/SafoneAPI?color=orange&style=for-the-badge)](https://github.com/adnansami1992sami/BlockDef)
 [![Contributors](https://img.shields.io/github/contributors/AsmSafone/SafoneAPI?style=for-the-badge&color=orange)](https://github.com/adnansami1992sami/BlockDef)
 
-##Installation system:
+## Installation system:
 
-###Activate python virtual env:
+### Activate python virtual env:
 ```sh
 $ 'virtualenv -p python3 env'
 ```
 Write 'cd env' to enter the env. Now in env folder install the files.
 
-###Install required libraries:
+### Install required libraries:
 
 ```sh
 1) go def folder
 2)pip install -r requirements.txt 
 ```
 
-##Running process:
+## Running process:
 ```sh
 1) config the database in "config/settings.py"
 2) in terminal give command "python main.py makemigrations"
