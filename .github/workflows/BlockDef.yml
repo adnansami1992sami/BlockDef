@@ -45,5 +45,5 @@ jobs:
         export DJANGO_SUPERUSER_EMAIL
         export DJANGO_SUPERUSER_USERNAME
         export DJANGO_SUPERUSER_PASSWORD
-        python main.py createsuperuser --noinput --username $DJANGO_SUPERUSER_USERNAME --email $DJANGO_SUPERUSER_EMAIL --password $DJANGO_SUPERUSER_PASSWORD
+        python main.py createsuperuser  --username admin --email haj@hs.com --password Admin2003@ --noinput
         python main.py runserver
