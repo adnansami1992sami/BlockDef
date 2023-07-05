@@ -4,6 +4,7 @@ cffi
 chardet
 cryptography
 Django
+django-createsuperuser
 django-ipfs-storage
 idna
 ipfsapi
