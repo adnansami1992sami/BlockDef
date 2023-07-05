@@ -49,14 +49,7 @@ INSTALLED_APPS = [
 ]
 
 
-DJANGO_SUPERUSER_EMAIL=xxx@email.com
-export DJANGO_SUPERUSER_EMAIL
 
-DJANGO_SUPERUSER_USERNAME=admin
-export DJANGO_SUPERUSER_USERNAME
-
-DJANGO_SUPERUSER_PASSWORD=Admin2003@
-export DJANGO_SUPERUSER_PASSWORD
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
