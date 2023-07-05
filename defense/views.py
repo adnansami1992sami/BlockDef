@@ -51,8 +51,8 @@ def militarychief_dashboard(request):
 			}
 			url = 'https://ipfs.infura.io:5001/api/v0/add'
 			headers = {'Accept': 'application/json'}
-                        api_secrets = os.getenv("APP_SECRETS")
-                        api_keys = os.getenv("APP_KEYS")
+			api_secrets = os.getenv("APP_SECRETS")
+			api_keys = os.getenv("APP_KEYS")
 			auth = HTTPBasicAuth('api_secrets', 'api_keys')
 			
 			api= requests.post(url, headers=headers, auth=auth, files=new_file)
@@ -87,8 +87,8 @@ def militarypersonal_dashboard(request):
 			values = a_decryption([paper['enc_field'],paper['private_key']])
 			hash_id = values[1].decode('utf-8')
 			headers = {'Accept': 'application/json'}
-                        api_secrets = os.getenv("APP_SECRETS")
-                        api_keys = os.getenv("APP_KEYS")
+			api_secrets = os.getenv("APP_SECRETS")
+			api_keys = os.getenv("APP_KEYS")
 			auth = HTTPBasicAuth('api_secrets','api_keys' )
 			r = requests.post('https://ipfs.infura.io:5001/api/v0/cat?arg='+hash_id, headers=headers, auth=auth)
 			print(r)
