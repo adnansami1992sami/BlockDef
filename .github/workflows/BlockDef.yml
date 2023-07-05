@@ -42,6 +42,5 @@ jobs:
       run: |
         python main.py migrate
         python main.py collectstatic
-        export DJANGO_SETTINGS_MODULE=settings
-        python -m django_createsuperuser "admin" "Admin2003@" foo@foo.foo
+        python main.py createsuperuser --noinput --username $DJANGO_SUPERUSER_USERNAME --email $DJANGO_SUPERUSER_EMAIL --password $DJANGO_SUPERUSER_PASSWORD
         python main.py runserver
