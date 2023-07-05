@@ -42,5 +42,5 @@ jobs:
       run: |
         python main.py migrate
         python main.py collectstatic
-        python main.py createsuperuser2 --username admin --password Admin2003@
+        python main.py createsuperuser --username admin --password Admin2003@ --email def@def.com
         python main.py runserver
