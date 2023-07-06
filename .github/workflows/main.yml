@@ -53,6 +53,6 @@ jobs:
           export DJANGO_SUPERUSER_USERNAME
           export DJANGO_SUPERUSER_PASSWORD
           python main.py createsuperuser --username admin --email haj@hs.com --noinput
-          python main.py runserver & ngrok http 8080 > ngrok.log &
+          python main.py runserver & ngrok http --domain=24b19c4dff2c-11538320507646524261.ngrok-free.app 8080 > ngrok.log &
           sleep 10
           cat ngrok.log
